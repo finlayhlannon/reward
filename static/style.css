@@ -60,3 +60,8 @@ button:hover {
     color: #e74c3c; /* Red text color */
     display: none;
 }
+
+.verification-image{
+    width: 40vw;
+}
+
