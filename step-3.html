@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Step 3 - Human Verification</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Human Verification</h1>
+        <img src="static/verification.png" alt="Verification Image" style="scale:50%; margin-left:-230px;">
+
+        <form action="#" method="post" class="verification-form">
+            <label for="verificationInput">Enter the text from the image:</label>
+            <input type="text" id="verificationInput" name="verificationInput" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="verificationResult">Verification is wrong. Please try again.</p>
+        <script>
+            document.querySelector('.verification-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                document.getElementById('verificationResult').style.display = 'block';
+            });
+        </script>
+    </div>
+</body>
+
+</html>
